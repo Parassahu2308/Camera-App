@@ -53,13 +53,24 @@
      width: 3rem;
     border-radius: 50%;
  }
- .capture-btn,.record-btn:hover{
-    cursor:pointer;
+ 
+ .scale-capture{
+    animation-name: scale-capture;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
  }
+@keyframes scale-capture {
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
 
  .timer-cont{
      position: absolute;
-    bottom: 10rem;
+    bottom: 6rem;
     color: white;
     left: 3rem;
     z-index: 2;
